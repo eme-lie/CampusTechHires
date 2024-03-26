@@ -81,10 +81,13 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       backgroundImage: {
-        "hero-pattern": "url('src/assets/images/students.jpg')",
+        "student-hero-pattern": "url('src/assets/images/students.jpg')",
+        "employer-hero-pattern": "url('src/assets/images/employer.png')",
         "how-it-works-step1-image": "url('src/assets/images/step1.svg')",
         "how-it-works-step2-image": "url('src/assets/images/step2.svg')",
         "how-it-works-step3-image": "url('src/assets/images/step3.svg')",
+        "get-started-image":
+          "url('src/assets/images/group-of-students-landscape.svg')",
       },
       width: {
         30: "30%",

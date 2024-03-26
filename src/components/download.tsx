@@ -1,6 +1,6 @@
 function Download() {
   return (
-    <div className="download flex flex-wrap pt-8 pr-12 pb-12 pl-12 gap-y-8 lg:pt-16 lg:pr-20 lg:pb-12 lg:pl-20 lg:flex-nowrap">
+    <div className="download flex flex-wrap items-center pt-8 pr-12 pb-12 pl-12 gap-y-8 lg:pt-16 lg:pr-20 lg:pb-12 lg:pl-20 lg:flex-nowrap">
       <div className="download-left flex flex-col gap-y-2">
         <h2 className="download-title text-2xl text-Neutral900_Text_main font-bold md:text-3xl lg:text-4xl">
           Download Our Latest App

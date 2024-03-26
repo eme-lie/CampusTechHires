@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLanguage } from "@fortawesome/free-solid-svg-icons";
 function Footer() {
   return (
-    <footer className="footer download flex flex-wrap pt-8 pr-12 pb-12 pl-12 gap-y-8 lg:pt-16 lg:pr-20 lg:pb-12 lg:pl-20 lg:flex-nowrap">
+    <footer className="footer download flex flex-wrap pt-8 pr-12 pb-12 pl-12 gap-y-8 lg:pt-16 lg:pr-20 lg:pb-12 lg:pl-20 md:flex-nowrap">
       <div className="my_logo_section w-auto flex flex-col space-y-8">
         <img
           className="logo_footer w-2/4"
@@ -24,7 +24,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="right_footer_section flex flex-row justify-between flex-wrap lg:flex-nowrap gap-y-4 w-3/4 ">
+      <div className="right_footer_section flex flex-row justify-between flex-wrap md:flex-nowrap gap-y-4 w-3/4">
         <div className="social_media_links flex flex-col space-y-3 w-full">
           <p className="social_media_links_title text-lg font-medium">
             Social Media

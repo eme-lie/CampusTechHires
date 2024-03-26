@@ -38,7 +38,7 @@ function Hero({
               {heroSubText}
             </p>
           </div>
-          <Button className="bg-primaryColor sm:px-4 sm:py-2 md:px-6 md:py-4 lg:px-8 lg:py-6 sm:text-base md:text-base lg:text-lg font-normal w-fit">
+          <Button className="bg-primaryColor sm:text-base sm:px-4 sm:py-2 md:text-base md:px-6 md:py-4 lg:px-8 lg:py-6 lg:text-lg font-normal w-fit">
             {signUpHeroButtonText}
           </Button>
         </div>
