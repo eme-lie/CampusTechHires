@@ -1,23 +1,43 @@
-import React, { useState } from "react";
+import { useFormik } from "formik";
+import { signupFormSchema } from "./schemas/signupFormSchema";
+import { FormikHelpers } from "formik";
 
+interface MyFormValues {
+  // Define your form fields here
+  // For example:
+  email: string;
+  password: string;
+}
+
+const onSubmit = async (
+  values: MyFormValues,
+  actions: FormikHelpers<MyFormValues>
+) => {
+  console.log(values);
+  // You can use setSubmitting to indicate that the form is no longer submitting
+  await new Promise((r) => setTimeout(r, 3000));
+  actions.setSubmitting(false);
+  // You can use resetForm to reset the form to its initial state
+  actions.resetForm();
+};
 
 const Signup: React.FC = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
-  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setEmail(e.target.value);
-  };
-
-  const handlePasswordChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setPassword(e.target.value);
-  };
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    // Add your signup logic here
-  };
-
+  const {
+    values,
+    errors,
+    touched,
+    isSubmitting,
+    handleBlur,
+    handleChange,
+    handleSubmit,
+  } = useFormik({
+    initialValues: {
+      email: "",
+      password: "",
+    },
+    validationSchema: signupFormSchema,
+    onSubmit,
+  });
   return (
     <div className="signupbackground bg-signup-login-background bg-cover h-screen flex flex-row pt-4 pr-12 pb-4 pl-12 lg:pt-8 lg:pr-32 lg:pb-8 lg:pl-32 md:pt-8 md:pr-16 md:pb-8 md:pl-16">
       <form
@@ -43,27 +63,53 @@ const Signup: React.FC = () => {
               Sign Up for Free with your email
             </p>
             <div className="inputs flex flex-col gap-y-4">
-              <input
-                type="email"
-                id="email"
-                value={email}
-                onChange={handleEmailChange}
-                placeholder="Email"
-                className="email-input h-12 w-full rounded border border-Neutral300_Border border-solid focus:outline text-Neutral300_Border pl-4"
-              />
-              <input
-                type="password"
-                id="password"
-                value={password}
-                onChange={handlePasswordChange}
-                placeholder="Password"
-                className="password-input h-12 w-full rounded border border-Neutral300_Border border-solid focus:outline text-Neutral300_Border pl-4"
-              />
+              <div className="input-and-error">
+                <input
+                  type="email"
+                  id="email"
+                  value={values.email}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  placeholder="Email"
+                  className={`email-input h-12 w-full rounded border border-Neutral300_Border border-solid focus:outline text-Neutral300_Border pl-4 ${
+                    errors.email && touched.email
+                      ? "error-class border-destructive"
+                      : ""
+                  }`}
+                />
+                {errors.email && touched.email && (
+                  <p className="error-response ">{errors.email}</p>
+                )}
+              </div>
+
+              <div className="input-and-error">
+                <input
+                  type="password"
+                  id="password"
+                  value={values.password}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  placeholder="Password"
+                  className={`password-input h-12 w-full rounded border border-Neutral300_Border border-solid focus:outline text-Neutral300_Border pl-4 ${
+                    errors.password && touched.password
+                      ? "error-class border-destructive"
+                      : ""
+                  }`}
+                />
+                {errors.password && touched.password && (
+                  <p className="error-response ">{errors.password}</p>
+                )}
+              </div>
             </div>
 
             <button
               type="submit"
-              className="bg-primaryColor w-fit text-Neutral100_Base_Background pt-4 pr-6 pb-4 pl-6 rounded"
+              disabled={isSubmitting}
+              className={
+                isSubmitting
+                  ? "bg-muted w-fit text-Neutral100_Base_Background pt-4 pr-6 pb-4 pl-6 rounded"
+                  : "bg-primaryColor w-fit text-Neutral100_Base_Background pt-4 pr-6 pb-4 pl-6 rounded"
+              }
             >
               Sign Up for free
             </button>
