@@ -24,6 +24,7 @@ module.exports = {
         Neutral100_Base_Background: "#fafafa",
         Neutral200_Secondary_Background: "#ebf3ff",
         Neutral300_Border: "#bdbdbd",
+        Neutral400: "#f2f2f2",
         Neutral600_Text_extra: "#757575",
         Neutral900_Text_main: "#0d3060",
         primaryColor: "#0c78f1",
@@ -88,9 +89,14 @@ module.exports = {
         "how-it-works-step3-image": "url('src/assets/images/step3.svg')",
         "get-started-image":
           "url('src/assets/images/group-of-students-landscape.svg')",
+        "signup-login-background":
+          "url('src/assets/images/signupandloginbackground.png')",
+        "signup-image": "url('src/assets/images/signup-image.png')",
       },
       width: {
         30: "30%",
+        55: "55%",
+        45: "45%",
       },
     },
   },

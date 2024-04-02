@@ -11,7 +11,7 @@ interface Props {
   navbarLink: string[];
 }
 
-function Hero({
+const Hero = ({
   className,
   heroText,
   heroSubText,
@@ -19,7 +19,7 @@ function Hero({
   imageLinkNavBar,
   imageAltNavBar,
   navbarLink,
-}: Props) {
+}: Props) => {
   return (
     <>
       <div className={className}>
@@ -45,6 +45,6 @@ function Hero({
       </div>
     </>
   );
-}
+};
 
 export default Hero;
