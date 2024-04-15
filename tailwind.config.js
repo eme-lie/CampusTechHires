@@ -28,6 +28,7 @@ module.exports = {
         Neutral600_Text_extra: "#757575",
         Neutral900_Text_main: "#0d3060",
         primaryColor: "#0c78f1",
+        success: "#4caf50",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -92,6 +93,10 @@ module.exports = {
         "signup-login-background":
           "url('src/assets/images/signupandloginbackground.png')",
         "signup-image": "url('src/assets/images/signup-image.png')",
+        "home-image": "url('src/assets/images/home-hero-imagee.png')",
+        "background-image-for-job":
+          "url('src/assets/images/background-for-job.svg')",
+        "job-image": "url('src/assets/images/background-for-job.png')",
       },
       width: {
         30: "30%",

@@ -1,6 +1,9 @@
 import { useFormik } from "formik";
 import { signupFormSchema } from "./schemas/signupFormSchema";
 import { FormikHelpers } from "formik";
+// import { Navigate } from "react-router-dom";
+// import { doCreateUserWithEmailAndPassword } from "@/firebase/auth";
+// import { useAuth } from "src/contexts/authContext/index.tsx";
 
 interface MyFormValues {
   // Define your form fields here
@@ -9,19 +12,26 @@ interface MyFormValues {
   password: string;
 }
 
+// interface AuthContextType {
+//   userLoggedIn: boolean;
+//   // include other properties as needed
+// }
+
 const onSubmit = async (
   values: MyFormValues,
   actions: FormikHelpers<MyFormValues>
 ) => {
   console.log(values);
   // You can use setSubmitting to indicate that the form is no longer submitting
-  await new Promise((r) => setTimeout(r, 3000));
+  // await new Promise((r) => setTimeout(r, 3000));
+  // await doCreateUserWithEmailAndPassword(values.email, values.password);
   actions.setSubmitting(false);
   // You can use resetForm to reset the form to its initial state
   actions.resetForm();
 };
 
 const Signup: React.FC = () => {
+  // const { userLoggedIn } = useAuth() as AuthContextType;
   const {
     values,
     errors,
