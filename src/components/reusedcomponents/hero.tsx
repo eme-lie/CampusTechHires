@@ -11,6 +11,7 @@ interface Props {
   imageAltNavBar: string;
   navbarLink: string[];
   logoutButtonText: string;
+  style?: React.CSSProperties;
 }
 
 const Hero = ({
@@ -22,10 +23,11 @@ const Hero = ({
   imageAltNavBar,
   navbarLink,
   logoutButtonText,
+  style,
 }: Props) => {
   return (
     <>
-      <div className={className}>
+      <div className={className} style={style}>
         <Navbar
           imageLinkNavBar={imageLinkNavBar}
           imageAltNavBar={imageAltNavBar}

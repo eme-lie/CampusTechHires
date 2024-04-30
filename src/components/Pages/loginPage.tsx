@@ -5,6 +5,7 @@ import { doSignInWithEmailAndPassword } from "@/firebase/auth";
 import { loginFormSchema } from "@/components/schemas/loginFormSchema";
 import { Link } from "react-router-dom";
 import loginImage from "@/assets/images/student-group.png";
+import signupandloginbackground from "@/assets/images/signupandloginbackground.png";
 
 interface MyFormValues {
   // Define your form fields here
@@ -44,7 +45,10 @@ const Login: React.FC = () => {
   });
 
   return (
-    <div className="signupbackground bg-signup-login-background bg-cover h-screen flex flex-row pt-4 pr-12 pb-4 pl-12 lg:pt-8 lg:pr-32 lg:pb-8 lg:pl-32 md:pt-8 md:pr-16 md:pb-8 md:pl-16">
+    <div
+      className="signupbackground bg-cover h-screen flex flex-row pt-4 pr-12 pb-4 pl-12 lg:pt-8 lg:pr-32 lg:pb-8 lg:pl-32 md:pt-8 md:pr-16 md:pb-8 md:pl-16"
+      style={{ backgroundImage: `url(${signupandloginbackground})` }}
+    >
       <form
         onSubmit={handleSubmit}
         className="bg-Neutral400 w-full md:w-55 flex flex-col space-y-4 rounded-tl rounded-bl"

@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { db } from "@/firebase/firebase";
 import { doc, setDoc } from "firebase/firestore";
 import signupImage from "@/assets/images/signupImage.png";
+import signupandloginbackground from "@/assets/images/signupandloginbackground.png";
 
 interface MyFormValues {
   // Define your form fields here
@@ -69,7 +70,10 @@ const Signup: React.FC = () => {
     onSubmit,
   });
   return (
-    <div className="signupbackground bg-signup-login-background bg-cover h-screen flex flex-row pt-4 pr-8 pb-4 pl-8 lg:pt-8 lg:pr-32 lg:pb-8 lg:pl-32 md:pt-8 md:pr-16 md:pb-8 md:pl-16">
+    <div
+      className="signupbackground bg-cover h-screen flex flex-row pt-4 pr-8 pb-4 pl-8 lg:pt-8 lg:pr-32 lg:pb-8 lg:pl-32 md:pt-8 md:pr-16 md:pb-8 md:pl-16"
+      style={{ backgroundImage: `url(${signupandloginbackground})` }}
+    >
       <form
         onSubmit={handleSubmit}
         className="bg-Neutral400 w-full md:w-55 flex flex-col rounded-tl rounded-bl"

@@ -2,6 +2,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLanguage } from "@fortawesome/free-solid-svg-icons";
 import CampusTechHires from "@/assets/logos/CampusTechHires.svg";
 import ukflag from "@/assets/images/ukflag.svg";
+import facebooklogo from "@/assets/images/facebook-logo.svg";
+import instagram from "@/assets/images/Instagram.svg";
+import twitter from "@/assets/images/twitter-logo.svg";
 
 function Footer() {
   return (
@@ -29,16 +32,12 @@ function Footer() {
             Social Media
           </p>
           <div className="social_container flex space-x-1 items-center w-fit">
-            <img
-              src="src/assets/images/Twitter logo.svg"
-              alt="twitter logo"
-              className="social_logo w-6"
-            />
+            <img src={twitter} alt="twitter logo" className="social_logo w-6" />
             <p className="social_text text-base font-regular">Twitter</p>
           </div>
           <div className="social_container flex space-x-1 items-center w-fit">
             <img
-              src="src/assets/images/Instagram.svg"
+              src={instagram}
               alt="instagram logo"
               className="social_logo w-6"
             />
@@ -46,7 +45,7 @@ function Footer() {
           </div>
           <div className="social_container flex space-x-1 items-center w-fit">
             <img
-              src="src/assets/images/Facebook logo.svg"
+              src={facebooklogo}
               alt="facebook logo"
               className="social_logo w-6"
             />

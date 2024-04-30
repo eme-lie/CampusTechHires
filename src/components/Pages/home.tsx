@@ -7,6 +7,7 @@ import {
 import { getJobs } from "@/firebase/firebase";
 import { Link } from "react-router-dom";
 import Navbar from "@/components/reusedcomponents/navbar";
+import homeheroimage from "@/assets/images/home-hero-imagee.png";
 
 interface Job {
   id: string;
@@ -32,7 +33,10 @@ export default function Home() {
 
   return (
     <div className="flex flex-col">
-      <div className="bg-home-image bg-cover flex flex-col pt-6 pr-8 pb-12 pl-8 gap-y-10 md:pt-6 md:pr-20 md:pb-20 md:pl-20 md:gap-y-20 lg:pt-8 lg:pr-20 lg:pb-48 lg:pl-20 lg:gap-y-24 hero-home-page">
+      <div
+        className="bg-home-image bg-cover flex flex-col pt-6 pr-8 pb-12 pl-8 gap-y-10 md:pt-6 md:pr-20 md:pb-20 md:pl-20 md:gap-y-20 lg:pt-8 lg:pr-20 lg:pb-48 lg:pl-20 lg:gap-y-24 hero-home-page"
+        style={{ backgroundImage: `url(${homeheroimage})` }}
+      >
         <Navbar
           imageLinkNavBar="src/assets/logos/CampusTechHires.svg"
           imageAltNavBar="campus-tech-hires logo"
