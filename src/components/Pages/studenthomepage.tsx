@@ -1,8 +1,8 @@
-import Hero from "./hero";
-import HowItWorks from "./howItWorks";
-import Faq from "./faq";
-import Download from "./download";
-import Footer from "./footer";
+import Hero from "../reusedcomponents/hero";
+import HowItWorks from "../studentHomePageSections/howItWorks";
+import Faq from "../studentHomePageSections/faq";
+import Download from "../studentHomePageSections/download";
+import Footer from "../reusedcomponents/footer";
 
 const StudentHomepage = () => {
   return (
@@ -13,8 +13,9 @@ const StudentHomepage = () => {
         heroSubText="Your No 1 website for securing part time IT Jobs"
         imageLinkNavBar="src/assets/logos/CampusTechHires.svg"
         imageAltNavBar="campus-tech-hires logo"
-        navbarLink={["Post Jobs", "Apply for Jobs", "Login"]}
+        navbarLink={["Post A Job", "Dashboard", "Login"]}
         signUpHeroButtonText="Sign Up"
+        logoutButtonText="Logout"
       />
 
       <HowItWorks />

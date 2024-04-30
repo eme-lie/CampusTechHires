@@ -22,7 +22,7 @@ function HowItWorks() {
               2
             </p>
           </div>
-          <p className="step-body">
+          <p className="text-Neutral100_Base_Background text-xl">
             Apply for jobs that fit your goals and schedule
           </p>
         </div>
@@ -32,7 +32,7 @@ function HowItWorks() {
               3
             </p>
           </div>
-          <p className="step-body">
+          <p className="text-Neutral100_Base_Background text-xl">
             Check you email for feedback from employers
           </p>
         </div>

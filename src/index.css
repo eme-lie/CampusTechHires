@@ -88,7 +88,7 @@
 
 /* END OF SHADCN STYLES */
 
-:root {
+/* :root {
   --D1-Large_Display_font-size: 4.25rem;
   --D1-Large_Display_line-height: 5.1rem;
   --D1-Large_Display_weight: 900;
@@ -160,7 +160,7 @@
 
 body {
   background-color: var(--Neutral100_Base_Background);
-}
+} */
 
 /* .navbar {
   display: flex;
@@ -174,19 +174,19 @@ body {
   width: 16rem;
 } */
 
-.navbar-links-main {
+/* .navbar-links-main {
   display: flex;
   flex-direction: row;
   column-gap: 2rem;
   align-items: center;
-}
+} */
 
-.navbar-links {
+/* .navbar-links {
   display: flex;
   flex-direction: row;
   list-style: none;
   column-gap: 2rem;
-}
+} */
 
 /* .heroApplyPage {
   background-image: url(src/assets/images/students.jpg);
@@ -204,17 +204,17 @@ body {
   cursor: pointer;
 } */
 
-.sign-up {
-  /* padding: 0.5rem 2rem;
+/* .sign-up {
+  padding: 0.5rem 2rem;
   font-size: var(--B1-Large_Body_font-size);
   font-weight: var(--B1-Large_Body_weight);
   line-height: var(--B1-Large_Body_line-height);
-  background-color: var(--Primary700_Default); */
+  background-color: var(--Primary700_Default);
   color: var(--Neutral100_Base_Background);
-  /* border: none;
+  border: none;
   border-radius: 0.2rem;
-  cursor: pointer; */
-}
+  cursor: pointer;
+} */
 
 /* .hero-left {
   display: flex;
@@ -245,7 +245,7 @@ body {
   width: 60%; 
 } */
 
-.sign-up-hero-button {
+/* .sign-up-hero-button {
   width: fit-content;
   padding: 0.5rem 2rem;
   font-size: var(--B1-Large_Body_font-size);
@@ -256,7 +256,7 @@ body {
   border: none;
   border-radius: 0.2rem;
   cursor: pointer;
-}
+} */
 
 /* .how-it-works {
   display: flex;
@@ -334,9 +334,9 @@ body {
   text-align: center;
 } */
 
-.step-body {
+/* .step-body {
   color: var(--Neutral100_Base_Background);
-}
+} */
 
 /* .faq {
   padding: 3rem 3rem;
@@ -582,18 +582,18 @@ body {
   line-height: var(--B2-Medium_Body_lineheight);
 } */
 
-.heroPostPage {
+/* .heroPostPage {
   background-image: url(src/assets/images/employer.png);
   background-size: cover;
   background-repeat: no-repeat;
-  /* height: 100vh; */
+  height: 100vh;
   padding: 2rem 6rem 8rem 6rem;
   display: flex;
   flex-direction: column;
   row-gap: 10rem;
-}
+} */
 
-@media (min-width: 577px) and (max-width: 768px) {
+/* @media (min-width: 577px) and (max-width: 768px) {
   :root {
     font-size: 14px;
     --D1-Large_Display_font-size: 2.375rem;
@@ -748,4 +748,4 @@ body {
     --Neutral600_Text_extra: #757575;
     --Neutral900_Text_main: #0d3060;
   }
-}
+} */

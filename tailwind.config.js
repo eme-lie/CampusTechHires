@@ -24,9 +24,11 @@ module.exports = {
         Neutral100_Base_Background: "#fafafa",
         Neutral200_Secondary_Background: "#ebf3ff",
         Neutral300_Border: "#bdbdbd",
+        Neutral400: "#f2f2f2",
         Neutral600_Text_extra: "#757575",
         Neutral900_Text_main: "#0d3060",
         primaryColor: "#0c78f1",
+        success: "#4caf50",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -88,9 +90,19 @@ module.exports = {
         "how-it-works-step3-image": "url('src/assets/images/step3.svg')",
         "get-started-image":
           "url('src/assets/images/group-of-students-landscape.svg')",
+        "signup-login-background":
+          "url('src/assets/images/signupandloginbackground.png')",
+        signupImage: "url('src/assets/images/signup-image.png')",
+        "home-image": "url('src/assets/images/home-hero-imagee.png')",
+        "background-image-for-job":
+          "url('src/assets/images/background-for-job.svg')",
+        "job-image": "url('src/assets/images/background-for-job.png')",
+        loginImage: "url('src/assets/images/student-group.png')",
       },
       width: {
         30: "30%",
+        55: "55%",
+        45: "45%",
       },
     },
   },

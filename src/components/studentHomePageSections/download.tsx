@@ -6,8 +6,8 @@ function Download() {
           Download Our Latest App
         </h2>
         <p className="download-body text-lg font-regular w-full md:w-3/5">
-          simply dummy text of the printing and typesetting industry. Lorem
-          Ipsum has been the industry's
+          Embrace the opportunity to download our latest app and discover the
+          next level of convenience and efficiency it offers.
         </p>
         <div className="button-container flex gap-x-6 mt-3">
           <img

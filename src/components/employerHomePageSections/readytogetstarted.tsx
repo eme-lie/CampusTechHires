@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 
 const ReadyToGetStarted: React.FC = () => {
   return (
@@ -7,8 +7,8 @@ const ReadyToGetStarted: React.FC = () => {
       <h2 className="text-Neutral100_Base_Background font-bold text-xl font-bold md:text-3xl lg:text-4xl">
         Ready to Employ the Best Students
       </h2>
-      <Link to="/target-page">
-        <Button className="bg-primaryColor sm:text-base sm:px-4 sm:py-2 md:text-base md:px-6 md:py-4 lg:px-8 lg:py-6 lg:text-lg font-normal w-fit text-Neutral100_Base_Background">
+      <Link to="/signup">
+        <Button className="bg-primaryColor sm:px-4 sm:py-2 md:px-6 md:py-4 lg:px-6 lg:py-3 sm:text-base md:text-base lg:text-lg font-medium hidden lg:block">
           Get Started
         </Button>
       </Link>

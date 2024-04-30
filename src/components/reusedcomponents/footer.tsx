@@ -19,7 +19,7 @@ function Footer() {
             <p className="country text-base font-medium ">United Kingdom</p>
           </div>
           <div className="language_holder w-fit flex bg-Neutral200_Secondary_Background space-x-2 p-2 rounded-md items-center">
-            <FontAwesomeIcon icon={faLanguage} style={{ color: "#fefefe" }} />
+            <FontAwesomeIcon icon={faLanguage} style={{ color: "#0d3060" }} />
             <p className="language text-base font-medium">English</p>
           </div>
         </div>
@@ -55,17 +55,15 @@ function Footer() {
           </div>
         </div>
         <div className="ecocar_links flex flex-col space-y-3 w-full">
-          <p className="ecocar_links_title text-lg font-medium">EcoCar</p>
+          <p className="ecocar_links_title text-lg font-medium">
+            CampusTechHires
+          </p>
           <div className="eco_services flex flex-col w-fit space-y-3">
+            <p className="eco_services_text text-base font-regular">Hiring</p>
             <p className="eco_services_text text-base font-regular">
-              Car Maintainance
+              Interview Tips
             </p>
-            <p className="eco_services_text text-base font-regular">
-              Car Repair
-            </p>
-            <p className="eco_services_text text-base font-regular">
-              Car Refurbrishing
-            </p>
+            <p className="eco_services_text text-base font-regular">Careers</p>
           </div>
         </div>
         <div className="company_links flex flex-col space-y-3">
