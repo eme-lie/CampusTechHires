@@ -3,7 +3,7 @@ import { faLanguage } from "@fortawesome/free-solid-svg-icons";
 import CampusTechHires from "@/assets/logos/CampusTechHires.svg";
 import ukflag from "@/assets/images/ukflag.svg";
 import facebooklogo from "@/assets/images/facebook-logo.svg";
-import instagram from "@/assets/images/instagram.svg";
+import instagramLogo from "@/assets/images/Instagram.svg";
 import twitter from "@/assets/images/twitter-logo.svg";
 
 function Footer() {
@@ -37,7 +37,7 @@ function Footer() {
           </div>
           <div className="social_container flex space-x-1 items-center w-fit">
             <img
-              src={instagram}
+              src={instagramLogo}
               alt="instagram logo"
               className="social_logo w-6"
             />

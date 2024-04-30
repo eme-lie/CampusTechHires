@@ -8,13 +8,6 @@
 
 @layer base {
   :root {
-    /* --Neutral100_Base_Background: 250 250 250;
-    --Neutral200_Secondary_Background: 235 243 255;
-    --Neutral300_Border: 189 189 189;
-    --Neutral600_Text_extra: 117 117 117;
-    --Neutral900_Text_main: 13 48 96;
-    --Primary700_Default: 12 120 241; */
-
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 

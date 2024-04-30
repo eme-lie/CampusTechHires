@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
 
-import groupOfStudentsLandscape from "@/assets/images/group-of-students-landscape.svg";
+import groupOfStudentsLandscape from "@/assets/images/groupofstudentslandscape.svg";
 
 const ReadyToGetStarted: React.FC = () => {
   return (
