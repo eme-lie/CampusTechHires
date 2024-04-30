@@ -1,5 +1,5 @@
 import { useFormik } from "formik";
-import { signUpFormSchema } from "./../schemas/signUpFormSchema";
+import { signUpFormSchema } from "../schemas/signUpFormSchema";
 import { FormikHelpers } from "formik";
 import { doCreateUserWithEmailAndPassword } from "@/firebase/auth";
 import { useNavigate } from "react-router-dom";
