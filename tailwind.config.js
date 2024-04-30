@@ -92,11 +92,12 @@ module.exports = {
           "url('src/assets/images/group-of-students-landscape.svg')",
         "signup-login-background":
           "url('src/assets/images/signupandloginbackground.png')",
-        "signup-image": "url('src/assets/images/signup-image.png')",
+        signupImage: "url('src/assets/images/signup-image.png')",
         "home-image": "url('src/assets/images/home-hero-imagee.png')",
         "background-image-for-job":
           "url('src/assets/images/background-for-job.svg')",
         "job-image": "url('src/assets/images/background-for-job.png')",
+        loginImage: "url('src/assets/images/student-group.png')",
       },
       width: {
         30: "30%",

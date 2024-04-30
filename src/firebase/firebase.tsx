@@ -35,13 +35,15 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
 // The getStorage function initializes the storage service of firebase. It returns a storage instance which you can use to store files. The instance is stored in the storage variable.
-const storage = getStorage();
+export const storage = getStorage();
 
 // The getFirestore function initializes the firestore service of firebase. It returns a firestore instance which you can use to interact with the firestore database. The instance is stored in the f variable.
 export const db = getFirestore();
 
-// collection reference
+// job collection reference
 const colRef = collection(db, "jobs");
+
+// const UserRef = collection(db, "users");
 
 interface Job {
   id: string;
@@ -109,4 +111,4 @@ export const getJob = (id: string) => {
 //     });
 // };
 
-export { app, auth, storage };
+export { app, auth };

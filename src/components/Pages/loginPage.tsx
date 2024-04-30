@@ -1,9 +1,10 @@
 import { useFormik } from "formik";
-import { signupFormSchema } from "./schemas/signupFormSchema";
 import { FormikHelpers } from "formik";
-// import { Navigate } from "react-router-dom";
-// import { doCreateUserWithEmailAndPassword } from "@/firebase/auth";
-// import { useAuth } from "src/contexts/authContext/index.tsx";
+import { useNavigate } from "react-router-dom";
+import { doSignInWithEmailAndPassword } from "@/firebase/auth";
+import { loginFormSchema } from "../schemas/loginFormSchema";
+import { Link } from "react-router-dom";
+import loginImage from "./../../assets/images/student-group.png";
 
 interface MyFormValues {
   // Define your form fields here
@@ -12,26 +13,19 @@ interface MyFormValues {
   password: string;
 }
 
-// interface AuthContextType {
-//   userLoggedIn: boolean;
-//   // include other properties as needed
-// }
+const Login: React.FC = () => {
+  const navigate = useNavigate();
+  const onSubmit = async (
+    values: MyFormValues,
+    actions: FormikHelpers<MyFormValues>
+  ) => {
+    console.log(values);
+    await doSignInWithEmailAndPassword(values.email, values.password);
+    navigate("/home");
+    actions.setSubmitting(false);
+    actions.resetForm();
+  };
 
-const onSubmit = async (
-  values: MyFormValues,
-  actions: FormikHelpers<MyFormValues>
-) => {
-  console.log(values);
-  // You can use setSubmitting to indicate that the form is no longer submitting
-  // await new Promise((r) => setTimeout(r, 3000));
-  // await doCreateUserWithEmailAndPassword(values.email, values.password);
-  actions.setSubmitting(false);
-  // You can use resetForm to reset the form to its initial state
-  actions.resetForm();
-};
-
-const Signup: React.FC = () => {
-  // const { userLoggedIn } = useAuth() as AuthContextType;
   const {
     values,
     errors,
@@ -45,33 +39,35 @@ const Signup: React.FC = () => {
       email: "",
       password: "",
     },
-    validationSchema: signupFormSchema,
+    validationSchema: loginFormSchema,
     onSubmit,
   });
+
   return (
     <div className="signupbackground bg-signup-login-background bg-cover h-screen flex flex-row pt-4 pr-12 pb-4 pl-12 lg:pt-8 lg:pr-32 lg:pb-8 lg:pl-32 md:pt-8 md:pr-16 md:pb-8 md:pl-16">
       <form
         onSubmit={handleSubmit}
-        className="bg-Neutral400 w-full md:w-55 flex flex-col space-y-4 rounded-tr rounded-br"
+        className="bg-Neutral400 w-full md:w-55 flex flex-col space-y-4 rounded-tl rounded-bl"
       >
         <div className="form-header bg-Neutral100_Base_Background flex flex-col pt-8 pr-8 pb-8 pl-8">
           <div className="image-subtitle flex flex-col items-center gap-y-2">
-            <img
-              src="src/assets/logos/CampusTechHires.svg"
-              alt="campus tech hires logo"
-              className=""
-            />
+            <Link to="/">
+              <img
+                src="src/assets/logos/CampusTechHires.svg"
+                alt="campus tech hires logo"
+                className=""
+              />
+            </Link>
+
             <p className="subtitle text-center">
-              Learn from the best professionals and be a part of the largest
-              online community for creatives
+              Welcome back to the largest platform for part time jobs for tech
+              oriented university students
             </p>
           </div>
         </div>
         <div className="main-form bg-Neutral400 flex flex-col justify-between h-full pb-4 ">
           <div className="title-and-inputs-and-button flex flex-col pt-6 pr-8 pb-8 pl-8 gap-y-4">
-            <p className="title flex flex-col">
-              Sign Up for Free with your email
-            </p>
+            <p className="title flex flex-col">Login with your email</p>
             <div className="inputs flex flex-col gap-y-4">
               <div className="input-and-error">
                 <input
@@ -121,19 +117,31 @@ const Signup: React.FC = () => {
                   : "bg-primaryColor w-fit text-Neutral100_Base_Background pt-4 pr-6 pb-4 pl-6 rounded"
               }
             >
-              Sign Up for free
+              Login
             </button>
           </div>
 
-          <div className="login-container flex gap-x-2 justify-center  ">
-            <p className="login-text">Already have an account?</p>
-            <p className="login-text-button">Log In</p>
+          <div className="signup-container flex items-center gap-x-2 justify-center border-t border-Neutral900_Text_main h-6 md:h-12">
+            <p className="signup-text text-sm md:text-lg">
+              Don't have an account?
+            </p>
+            <Link to="/signup">
+              <p className="signup-text-button underline text-sm md:text-lg font-medium">
+                Sign Up
+              </p>
+            </Link>
           </div>
         </div>
       </form>
-      <div className="bg-signup-image bg-cover w-45 h-full rounded-tl rounded-bl hidden md:block"></div>
+      <div className="flex w-45 rounded-tr h-full rounded-br hidden md:block">
+        <img
+          src={loginImage}
+          alt="a group of students"
+          className="w-full h-full object-cover rounded-tr rounded-br"
+        />
+      </div>
     </div>
   );
 };
 
-export default Signup;
+export default Login;

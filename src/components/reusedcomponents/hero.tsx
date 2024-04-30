@@ -1,5 +1,6 @@
 import Navbar from "./navbar";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
+import { Link } from "react-router-dom";
 
 interface Props {
   className: string;
@@ -9,6 +10,7 @@ interface Props {
   imageLinkNavBar: string;
   imageAltNavBar: string;
   navbarLink: string[];
+  logoutButtonText: string;
 }
 
 const Hero = ({
@@ -19,6 +21,7 @@ const Hero = ({
   imageLinkNavBar,
   imageAltNavBar,
   navbarLink,
+  logoutButtonText,
 }: Props) => {
   return (
     <>
@@ -28,6 +31,7 @@ const Hero = ({
           imageAltNavBar={imageAltNavBar}
           navbarLink={navbarLink}
           signUpHeroButtonText={signUpHeroButtonText}
+          logoutButtonText={logoutButtonText}
         />
         <div className="flex flex-col space-y-6 md:space-y-8 lg:space-y-10">
           <div className="flex flex-col gap-y-2 md:gap-y-4 lg:gap-y-5 hero-text-container">
@@ -38,9 +42,11 @@ const Hero = ({
               {heroSubText}
             </p>
           </div>
-          <Button className="bg-primaryColor sm:text-base sm:px-4 sm:py-2 md:text-base md:px-6 md:py-4 lg:px-8 lg:py-6 lg:text-lg font-normal w-fit">
-            {signUpHeroButtonText}
-          </Button>
+          <Link to="/signup">
+            <Button className="bg-primaryColor sm:text-base sm:px-4 sm:py-2 md:text-base md:px-6 md:py-4 lg:px-6 lg:py-3 lg:text-lg font-medium w-fit">
+              {signUpHeroButtonText}
+            </Button>
+          </Link>
         </div>
       </div>
     </>
