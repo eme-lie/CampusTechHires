@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import { PostJobPage } from "./Forms/postjobform";
-import Navbar from "./reusedcomponents/navbar";
+import { PostJobPage } from "@/components/Forms/postjobform";
+import Navbar from "@/components/reusedcomponents/navbar";
 import { collection, getDocs, query, where } from "firebase/firestore";
-import { db, auth } from "../firebase/firebase";
+import { db, auth } from "@/firebase/firebase";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEllipsisVertical } from "@fortawesome/free-solid-svg-icons";
 

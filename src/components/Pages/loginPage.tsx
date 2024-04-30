@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { doSignInWithEmailAndPassword } from "@/firebase/auth";
 import { loginFormSchema } from "@/components/schemas/loginFormSchema";
 import { Link } from "react-router-dom";
-import loginImage from "./../../assets/images/student-group.png";
+import loginImage from "@/assets/images/student-group.png";
 
 interface MyFormValues {
   // Define your form fields here

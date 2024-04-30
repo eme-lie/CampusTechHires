@@ -1,8 +1,8 @@
-import Hero from "../reusedcomponents/hero";
-import HowItWorks from "../studentHomePageSections/howItWorks";
-import Faq from "../studentHomePageSections/faq";
-import Download from "../studentHomePageSections/download";
-import Footer from "../reusedcomponents/footer";
+import Hero from "@/components/reusedcomponents/hero";
+import HowItWorks from "@/components/studentHomePageSections/howItWorks";
+import Faq from "@/components/studentHomePageSections/faq";
+import Download from "@/components/studentHomePageSections/download";
+import Footer from "@/components/reusedcomponents/footer";
 
 const StudentHomepage = () => {
   return (

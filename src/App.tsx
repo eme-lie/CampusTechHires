@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import StudentHomepage from "./components/Pages/studenthomepage";
-import EmployerHomepage from "./components/Pages/employerhomepage";
-import Signup from "./components/Pages/signupPage";
-import Home from "./components/Pages/home";
-import { PostJobPage } from "./components/Forms/postjobform";
-import { Job } from "./components/Pages/jobdetailspage";
-import { EmployerDashboard } from "./components/employerdashboard";
-import Login from "./components/Pages/loginPage";
-import { StudentDashboard } from "./components/studentdashboard";
+import StudentHomepage from "@/components/Pages/studenthomepage";
+import EmployerHomepage from "@/components/Pages/employerhomepage";
+import Signup from "@/components/Pages/signupPage";
+import Home from "@/components/Pages/home";
+import { PostJobPage } from "@/components/Forms/postjobform";
+import { Job } from "@/components/Pages/jobdetailspage";
+import { EmployerDashboard } from "@/components/employerdashboard";
+import Login from "@/components/Pages/loginPage";
+import { StudentDashboard } from "@/components/studentdashboard";
 
 function App() {
   return (

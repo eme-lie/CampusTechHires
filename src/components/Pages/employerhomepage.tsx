@@ -1,7 +1,7 @@
 import Hero from "../reusedcomponents/hero";
-import WhyUseUs from "../employerHomePageSections/whyuseus";
-import ReadyToGetStarted from "../employerHomePageSections/readytogetstarted";
-import Footer from "../reusedcomponents/footer";
+import WhyUseUs from "@/components/employerHomePageSections/whyuseus";
+import ReadyToGetStarted from "@/components/employerHomePageSections/readytogetstarted";
+import Footer from "@/components/reusedcomponents/footer";
 
 const EmployerHomepage = () => {
   return (

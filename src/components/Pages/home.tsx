@@ -4,9 +4,9 @@ import {
   faMagnifyingGlass,
   faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
-import { getJobs } from "../../firebase/firebase";
+import { getJobs } from "@/firebase/firebase";
 import { Link } from "react-router-dom";
-import Navbar from "../reusedcomponents/navbar";
+import Navbar from "@/components/reusedcomponents/navbar";
 
 interface Job {
   id: string;

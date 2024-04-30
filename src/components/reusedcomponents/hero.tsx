@@ -1,5 +1,5 @@
-import Navbar from "./navbar";
-import { Button } from "../ui/button";
+import Navbar from "@/components/reusedcomponents/navbar";
+import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 interface Props {

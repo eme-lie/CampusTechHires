@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { db } from "@/firebase/firebase";
 import { doc, setDoc } from "firebase/firestore";
-import signupImage from "./../../assets/images/signupImage.png";
+import signupImage from "@/assets/images/signupImage.png";
 
 interface MyFormValues {
   // Define your form fields here

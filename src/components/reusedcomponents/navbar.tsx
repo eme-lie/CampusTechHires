@@ -6,7 +6,7 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import { doSignOut } from "@/firebase/auth";
-import { Button } from "../ui/button";
+import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
@@ -14,7 +14,7 @@ import { onAuthStateChanged } from "firebase/auth";
 import { login, logout } from "@/redux/userauthslice";
 import { auth } from "@/firebase/firebase";
 import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
-import { Mobilenavbar } from "./mobilenavbar";
+import { Mobilenavbar } from "@/components/reusedcomponents/mobilenavbar";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "@/firebase/firebase";
 
