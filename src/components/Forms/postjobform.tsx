@@ -1,5 +1,5 @@
 import { useFormik } from "formik";
-import { postJobFormSchema } from "../schemas/postJobFormSchema";
+import { postJobFormSchema } from "./../schemas/postJobFormSchema";
 import { FormikHelpers } from "formik";
 import { addDoc, collection } from "firebase/firestore";
 import { db, auth } from "@/firebase/firebase";
