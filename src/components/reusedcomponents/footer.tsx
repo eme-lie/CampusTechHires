@@ -1,21 +1,20 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLanguage } from "@fortawesome/free-solid-svg-icons";
+import CampusTechHires from "@/assets/logos/CampusTechHires.svg";
+import ukflag from "@/assets/images/ukflag.svg";
+
 function Footer() {
   return (
     <footer className="footer download flex flex-wrap pt-8 pr-12 pb-12 pl-12 gap-y-8 lg:pt-16 lg:pr-20 lg:pb-12 lg:pl-20 md:flex-nowrap">
       <div className="my_logo_section w-auto flex flex-col space-y-8">
         <img
           className="logo_footer w-2/4"
-          src="src/assets/logos/CampusTechHires.svg"
+          src={CampusTechHires}
           alt="CampusTechHires logo"
         />
         <div className="my_logo_section_inner flex flex-col space-y-2">
           <div className="flag_holder w-fit flex bg-Neutral200_Secondary_Background space-x-2 p-2 rounded-md items-center">
-            <img
-              src="src/assets/images/uk flag.svg"
-              alt="uk flag"
-              className="flag w-6"
-            />
+            <img src={ukflag} alt="uk flag" className="flag w-6" />
             <p className="country text-base font-medium ">United Kingdom</p>
           </div>
           <div className="language_holder w-fit flex bg-Neutral200_Secondary_Background space-x-2 p-2 rounded-md items-center">
