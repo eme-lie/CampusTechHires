@@ -8,6 +8,7 @@ import { db } from "@/firebase/firebase";
 import { doc, setDoc } from "firebase/firestore";
 import signupImage from "@/assets/images/signupImage.png";
 import signupandloginbackground from "@/assets/images/signupandloginbackground.png";
+import CampusTechHires from "@/assets/logos/CampusTechHires.svg";
 
 interface MyFormValues {
   // Define your form fields here
@@ -82,7 +83,7 @@ const Signup: React.FC = () => {
           <div className="image-subtitle flex flex-col items-center gap-y-2">
             <Link to="/">
               <img
-                src="src/assets/logos/CampusTechHires.svg"
+                src={CampusTechHires}
                 alt="campus tech hires logo"
                 className="w-56 md:w-72 lg:w-96"
               />

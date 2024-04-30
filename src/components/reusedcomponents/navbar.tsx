@@ -17,6 +17,7 @@ import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
 import { Mobilenavbar } from "@/components/reusedcomponents/mobilenavbar";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "@/firebase/firebase";
+// import { AuthComponent } from "@/firebase/auth";
 
 interface RootState {
   userAuth: {
@@ -102,12 +103,23 @@ function Navbar({
 
   return (
     <div className="navbar flex justify-between">
-      <img
-        src={imageLinkNavBar}
-        alt={imageAltNavBar}
-        className="w-40 md:w-64 lg:w-72"
-      />
-
+      {isLoggedIn ? (
+        <Link to="/home">
+          <img
+            src={imageLinkNavBar}
+            alt={imageAltNavBar}
+            className="w-40 md:w-64 lg:w-72"
+          />
+        </Link>
+      ) : (
+        <Link to="/">
+          <img
+            src={imageLinkNavBar}
+            alt={imageAltNavBar}
+            className="w-40 md:w-64 lg:w-72"
+          />
+        </Link>
+      )}
       <div className="navbar-links-main flex items-center gap-x-6">
         <ul className="navbar-links flex items-center gap-x-6">
           {navbarLink.map((link) => {
@@ -235,7 +247,7 @@ function Navbar({
           })}
         </ul>
         {isLoggedIn ? (
-          <Link to="/studenthomepage">
+          <Link to="/">
             <Button
               className="bg-primaryColor sm:px-4 sm:py-2 md:px-6 md:py-4 lg:px-8 lg:py-3 sm:text-base md:text-base lg:text-lg font-normal hidden lg:block"
               onClick={doSignOut}

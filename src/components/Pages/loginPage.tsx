@@ -6,6 +6,7 @@ import { loginFormSchema } from "@/components/schemas/loginFormSchema";
 import { Link } from "react-router-dom";
 import loginImage from "@/assets/images/student-group.png";
 import signupandloginbackground from "@/assets/images/signupandloginbackground.png";
+import CampusTechHires from "@/assets/logos/CampusTechHires.svg";
 
 interface MyFormValues {
   // Define your form fields here
@@ -22,6 +23,7 @@ const Login: React.FC = () => {
   ) => {
     console.log(values);
     await doSignInWithEmailAndPassword(values.email, values.password);
+
     navigate("/home");
     actions.setSubmitting(false);
     actions.resetForm();
@@ -57,9 +59,9 @@ const Login: React.FC = () => {
           <div className="image-subtitle flex flex-col items-center gap-y-2">
             <Link to="/">
               <img
-                src="src/assets/logos/CampusTechHires.svg"
+                src={CampusTechHires}
                 alt="campus tech hires logo"
-                className=""
+                className="w-56 md:w-72 lg:w-96"
               />
             </Link>
 

@@ -170,7 +170,7 @@ export const Mobilenavbar = ({
           }
         })}
         {isLoggedIn ? (
-          <Link to="/studenthomepage">
+          <Link to="/">
             <div className="flex flex-col w-full pb-2 pl-4" onClick={doSignOut}>
               <p className="text-Neutral900_Text_main sm:text-base md:text-base lg:text-lg">
                 {logoutButtonText}

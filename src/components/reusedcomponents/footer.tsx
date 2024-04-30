@@ -3,7 +3,7 @@ import { faLanguage } from "@fortawesome/free-solid-svg-icons";
 import CampusTechHires from "@/assets/logos/CampusTechHires.svg";
 import ukflag from "@/assets/images/ukflag.svg";
 import facebooklogo from "@/assets/images/facebook-logo.svg";
-import instagram from "@/assets/images/Instagram.svg";
+import instagram from "@/assets/images/instagram.svg";
 import twitter from "@/assets/images/twitter-logo.svg";
 
 function Footer() {
