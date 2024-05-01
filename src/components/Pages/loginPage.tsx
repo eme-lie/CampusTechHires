@@ -125,7 +125,7 @@ const Login: React.FC = () => {
               disabled={isSubmitting}
               className={
                 isSubmitting
-                  ? "bg-muted w-fit text-Neutral100_Base_Background pt-4 pr-6 pb-4 pl-6 rounded"
+                  ? "bg-Neutral900_Text_main bg-opacity-50 w-fit text-Neutral100_Base_Background pt-4 pr-6 pb-4 pl-6 rounded"
                   : "bg-primaryColor w-fit text-Neutral100_Base_Background pt-4 pr-6 pb-4 pl-6 rounded"
               }
             >

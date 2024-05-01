@@ -174,7 +174,7 @@ const Signup: React.FC = () => {
               disabled={isSubmitting}
               className={
                 isSubmitting
-                  ? "bg-muted w-fit text-Neutral100_Base_Background pt-4 pr-6 pb-4 pl-6 rounded text-lg cursor-not-allowed font-medium"
+                  ? "bg-Neutral900_Text_main bg-opacity-80 w-fit text-Neutral100_Base_Background pt-4 pr-6 pb-4 pl-6 rounded text-lg font-medium"
                   : "bg-primaryColor w-fit text-Neutral100_Base_Background pt-3 pr-4 pb-3 pl-4 md:pt-4 md:pr-6 md:pb-4 md:pl-6 rounded font-medium text-sm md:text-lg"
               }
             >
