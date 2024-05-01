@@ -65,15 +65,17 @@ const Login: React.FC = () => {
               />
             </Link>
 
-            <p className="subtitle text-center">
+            <p className="subtitle text-center text-lg md:text-xl">
               Welcome back to the largest platform for part time jobs for tech
               oriented university students
             </p>
           </div>
         </div>
         <div className="main-form bg-Neutral400 flex flex-col justify-between h-full pb-4 ">
-          <div className="title-and-inputs-and-button flex flex-col pt-6 pr-8 pb-8 pl-8 gap-y-4">
-            <p className="title flex flex-col">Login with your email</p>
+          <div className="title-and-inputs-and-button flex flex-col pt-2 pr-8 pb-8 pl-8 gap-y-4">
+            <p className="title title text-sm font-medium md:text-lg lg:text-xl">
+              Login with your email
+            </p>
             <div className="inputs flex flex-col gap-y-4">
               <div className="input-and-error">
                 <input
@@ -83,14 +85,16 @@ const Login: React.FC = () => {
                   onChange={handleChange}
                   onBlur={handleBlur}
                   placeholder="Email"
-                  className={`email-input h-12 w-full rounded border border-Neutral300_Border border-solid focus:outline text-Neutral300_Border pl-4 ${
+                  className={`email-input h-12 w-full rounded border border-Neutral300_Border border-solid focus:outline text-Neutral900_Text_main pl-4 ${
                     errors.email && touched.email
                       ? "error-class border-destructive"
                       : ""
                   }`}
                 />
                 {errors.email && touched.email && (
-                  <p className="error-response ">{errors.email}</p>
+                  <p className="error-response text-destructive">
+                    {errors.email}
+                  </p>
                 )}
               </div>
 
@@ -102,14 +106,16 @@ const Login: React.FC = () => {
                   onChange={handleChange}
                   onBlur={handleBlur}
                   placeholder="Password"
-                  className={`password-input h-12 w-full rounded border border-Neutral300_Border border-solid focus:outline text-Neutral300_Border pl-4 ${
+                  className={`password-input h-12 w-full rounded border border-Neutral300_Border border-solid focus:outline text-Neutral900_Text_main pl-4 ${
                     errors.password && touched.password
                       ? "error-class border-destructive"
                       : ""
                   }`}
                 />
                 {errors.password && touched.password && (
-                  <p className="error-response ">{errors.password}</p>
+                  <p className="error-response text-destructive">
+                    {errors.password}
+                  </p>
                 )}
               </div>
             </div>

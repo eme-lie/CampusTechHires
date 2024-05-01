@@ -126,7 +126,7 @@ const Signup: React.FC = () => {
                   value={values.userType}
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  className={`title-input h-12 w-full rounded border border-Neutral300_Border border-solid focus:outline text-Neutral300_Border pr-4 pl-4 ${
+                  className={`title-input h-12 w-full rounded border border-Neutral300_Border border-solid focus:outline text-Neutral900_Text_main pr-4 pl-4 ${
                     errors.userType && touched.userType
                       ? "error-class border-destructive"
                       : ""
@@ -141,7 +141,9 @@ const Signup: React.FC = () => {
                 </select>
 
                 {errors.userType && touched.userType && (
-                  <p className="error-response ">{errors.userType}</p>
+                  <p className="error-response text-destructive text-sm md:text-lg">
+                    {errors.userType}
+                  </p>
                 )}
               </div>
 
