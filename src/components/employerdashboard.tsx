@@ -115,7 +115,7 @@ export const EmployerDashboard = () => {
                   : `jobApplicationsText text-sm md:text-xl font-regular`
               }
             >
-              Jobs
+              Applications
             </p>
           </div>
         </div>

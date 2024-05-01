@@ -1,19 +1,17 @@
 # CampusTechHires
 
-CampusTechHires is a job advert and application platform for university students studying IT courses and seeking part time-entry level job roles in software
-development. Employers post job adverts and students can apply for these jobs on the platform
+CampusTechHires is a job advert and application platform for university students studying IT courses and seeking part time-entry level job roles in software development. Employers post job adverts and students can apply for these jobs on the platform. The homepage contains a list of available jobs which students can filter through and also apply for. Employers and Students have their own unique dashboards tailored to their needs as well
+On the employer dashboard they can post jobs and view a list of their active job adverts and on the student dashboard they view the list jobs that they have applied for and also saved jobs
 
 # CampusTechHires currently comprises of a
 
 1. Student and Employer Landing page
 2. Sign Up and Login Page
-3. A Home page home page where the available jobs are displayed
-   can only be accessed when a user is logged in
-4. A job details page which shows the complete details of each
-   specific job
+3. A Home page home page where the available jobs are displayed can only be accessed when a user is logged in
+4. A job details page which shows the complete details of each specific job
 5. A job application form as well
-6. An employer page with 3 views; Post Job view/form, Active jobs &
-   Applications
+6. An employer dashboard with 3 views; Post Job view/form, Active jobs & Applications
+7. A student dashboard with 2 views; Applied Job view and Saved Jobs
 
 # Development of CampusTechHires
 
@@ -27,30 +25,17 @@ Due to react’s unopinionated nature;
 • I utilized Typescript for enhanced type safety and code clarity. TypeScript is a strongly typed programming language that builds on JavaScript, and it gives developers better tooling at any scale. It helps developers to describe the shape of objects and functions in their code.
 
 **For Global State Management**
-• For global state management, I used the redux tool kit (RTK) and react-redux library. The redux toolkit is way easier to use compared to redux for global state management due to the following reasons:
-
-- It is simple: Includes utilities to simplify common use cases like store setup, creating reducers, immutable update logic, and more.
-
-- It is opinionated: Provides good defaults for store setup out of the box, and includes the most commonly used Redux addons built-in.
-
-- It is powerful:It takes inspiration from libraries like Immer and Autodux to let you write "mutative" immutable update logic, and even create entire "slices" of state automatically.
-
-- Effective: It lets you focus on the core logic your app needs, so you can do more work with less code.
+• For global state management, I used the redux tool kit (RTK) and react-redux library. The redux toolkit is way easier to use compared to redux for global state management due to the following reasons:- It is simple: Includes utilities to simplify common use cases like store setup, creating reducers, immutable update logic, and more.- It is opinionated: Provides good defaults for store setup out of the box, and includes the most commonly used Redux addons built-in.- It is powerful:It takes inspiration from libraries like Immer and Autodux to let you write "mutative" immutable update logic, and even create entire "slices" of state automatically.- Effective: It lets you focus on the core logic your app needs, so you can do more work with less code.
 
 **Form Validation:**
-I employed Formik to streamline and to make form validation processes robust. It helps with the three most annoying parts:
+• I employed Formik to streamline and to make form validation processes robust. It helps with the three most annoying parts:
 
 - Getting values in and out of form state
-
 - Validation and error messages
-
 - Handling form submission
 
 **Backend Implementation**
-• Finally I used Firebase (a backend as a service that provides a lot of
-software development kits) as a reliable solution for authentication
-and database management tasks
+• Finally I used Firebase (a backend as a service that provides a lot of software development kits) as a reliable solution for authentication and database management tasks
 
-# Deployment of CampusTechHires
-
+**Deployment of CampusTechHires**
 CampusTechHires was deployed using Netlify. The live deployment URL of the CampusTechHires is https://campustechhires.netlify.app/
